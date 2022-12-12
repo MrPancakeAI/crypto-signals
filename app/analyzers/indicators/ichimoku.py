@@ -62,8 +62,7 @@ class Ichimoku(IndicatorUtils):
         last_time = dataframe.index[-1]
         timedelta = dataframe.index[1] - dataframe.index[0]
         newindex = pandas.DatetimeIndex(start=last_time + timedelta,
-                                        freq=timedelta,
-                                        periods=cloud_displacement)
+                                        freq=timedelta)
         ichimoku_values = ichimoku_values.append(pandas.DataFrame(index=newindex))
         # cloud offset
         ichimoku_values['leading_span_a'] = ichimoku_values['leading_span_a'].shift(cloud_displacement)

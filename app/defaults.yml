@@ -120,16 +120,6 @@ indicators:
       hot: 0
       cold: 0
       candle_period: 1d
-  ichimoku:
-    - enabled: true
-      alert_enabled: true
-      alert_frequency: once
-      signal:
-        - leading_span_a
-        - leading_span_b
-      hot: true
-      cold: true
-      candle_period: 1d
   iiv:
     - enabled: true
       alert_enabled: true
